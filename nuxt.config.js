@@ -4,7 +4,7 @@ const glob = require('glob');
 const config = require("./content/data/config.json")
 /* eslin-enable */
 const dynamicRoutes = getDynamicPaths({
-  '/blog': 'content/blog-posts/*.md',
+  '/blog': 'content/pages/*.md',
  });
 
 export default {
@@ -60,7 +60,7 @@ export default {
       {
           test: /\.md$/,
           loader: "frontmatter-markdown-loader",
-          include: path.resolve(__dirname, "content/blog-posts")
+          include: path.resolve(__dirname, "content/pages")
       })
     }    
   },

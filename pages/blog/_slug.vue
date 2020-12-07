@@ -42,9 +42,9 @@
       try {
         const currentPath = params.slug
         // get current post data
-        const post = await import(`~/content/blog-posts/${params.slug}.md`);
+        const post = await import(`~/content/pages/${params.slug}.md`);
         // get all post data for next route
-        const allPosts = await require.context("~/content/blog-posts/", true, /\.md$/)
+        const allPosts = await require.context("~/content/pages/", true, /\.md$/)
         const posts =  allPosts.keys().map((key) => {
           return allPosts(key)
         });
