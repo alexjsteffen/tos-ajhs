@@ -7,8 +7,8 @@ sections:
 - type: heading
   label: Content
 - type: directory
-  path: content/blog-posts
-  label: Blog Posts
+  path: content/pages
+  label: Pages
   create: documents
   match: "**/*"
   templates:
