@@ -1,5 +1,5 @@
 ---
-author: Allen Ginsberg
+author: ajhs
 title: Privacy Policy
 date: 2020-12-01T05:00:00Z
 hero_image: "/033503.JPG"
